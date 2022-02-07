@@ -16,9 +16,10 @@
 body {
     font-family: 'Open Sans', sans-serif;
     background: var(--violet-color) url(./images/bg-mobile.svg) no-repeat;
+    background-size: contain;
     color: #fff;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     padding: 2rem;
 }
 
@@ -113,11 +114,11 @@ footer a {
 }
 
 /* media queries */
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
     body {
         background: var(--violet-color) url(./images/bg-desktop.svg) no-repeat;
         background-size: cover;
-        padding: 4rem;
+        padding: 3rem;
     }
 
     header {
@@ -134,8 +135,12 @@ footer a {
         margin-bottom: 8px;
     }
 
+    main .huddle-illustration {
+        max-width: 55%;
+    }
+
     main .content {
-        padding: 70px 60px 0;
+        padding: 60px 30px 0;
     }
 
     main h1 {
@@ -155,5 +160,15 @@ footer a {
     footer a:hover {
         color: var(--soft-magenta-color);
         border-color: var(--soft-magenta-color);
+    }
+}
+
+@media (min-width: 1440px) {
+    main .huddle-illustration {
+        max-width: 60%;
+    }
+
+    main .content {
+        padding: 70px 40px 0;
     }
 }
