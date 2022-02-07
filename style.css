@@ -91,3 +91,44 @@ footer li {
     align-items: center;
     font-size: 14px;
 }
+
+/* media queries */
+@media (min-width: 1440px) {
+    body {
+        background: var(--violet-color) url(./images/bg-desktop.svg) no-repeat;
+        background-size: cover;
+        padding: 4rem;
+    }
+
+    header {
+        margin-bottom: 80px;
+    }
+
+    header img {
+        width: 180px;
+    }
+
+    main {
+        text-align: left;
+        display: flex;
+        margin-bottom: 8px;
+    }
+
+    main .content {
+        padding: 70px 60px 0;
+    }
+
+    main h1 {
+        font-size: 2rem;
+    }
+
+    .primary-btn {
+        font-size: 1.1rem;
+        padding: 15px 60px;
+    }
+
+    footer ul {
+        width: 12%;
+        margin: 0 0 0 auto;
+    }
+}
