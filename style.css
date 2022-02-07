@@ -52,7 +52,6 @@ a:visited {
 }
 
 .primary-btn:hover {
-    cursor: pointer;
     background: var(--soft-magenta-color);
     color: #fff;
 }
